@@ -2,7 +2,6 @@ package ua.oshevchuk.testrecyclerretrofit.data
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import ua.oshevchuk.testrecyclerretrofit.api.Api
 
 object RetrofitInstance {

@@ -1,7 +1,6 @@
 package ua.oshevchuk.testrecyclerretrofit.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
@@ -9,12 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ua.oshevchuk.testrecyclerretrofit.databinding.ItemBinding
 import ua.oshevchuk.testrecyclerretrofit.models.GameModelItem
-import ua.oshevchuk.testrecyclerretrofit.screens.main.MainFragment
-import java.text.FieldPosition
+
 
 class MainRecyclerAdapter(private val clickListener: (GameModelItem) -> Unit) :
     RecyclerView.Adapter<MainRecyclerAdapter.MainViewHolder>() {
-    private val mainFragment = MainFragment()
     class MainViewHolder(val binding: ItemBinding, clickAtPosition: (Int) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
         init {
